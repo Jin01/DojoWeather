@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DojoWeather</title>
+</head>
+
+<body>
+    <div class="nav">
+        <h1>DojoWeather</h1>
+        <ul>
+            <li onclick="displayAlert()">Burbank</li>
+            <li onclick="displayAlert()">Chicago</li>
+            <li onclick="displayAlert()">Dallas</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="top">
+            <h2>San Jose</h2>
+            <form>
+                <label for="temperature">Show temperature in</label>
+                <select id="temperature" name="temperature" onchange="convertTemp(this)">
+                    <option>C</option>
+                    <option>F</option>
+                </select>
+            </form>
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>Today</h2>
+                <img src="./assets/some_rain.png" alt="some_rain">
+                <p>some rain</p>
+                <div class="temp-display">
+                    <div class="high">
+                        <span id="t1">
+                            <p>80</p>
+                        </span>
+                    </div>
+                    <div class="low">
+                        <span id="t2">
+                            <p>66</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Tomorrow</h2>
+                <img src="./assets/some_sun.png" alt="some_sun">
+                <p>some sun</p>
+                <div class="temp-display">
+                    <div class="high" id="3">
+                        <span id="t3">69</span>
+                    </div>
+                    <div class="low" id="t4">
+                        <p>61</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <h2>Friday</h2>
+                <img src="./assets/some_clouds.png" alt="some_clouds">
+                <p>some cloud</p>
+                <div class="temp-display">
+                    <div class="high" id="t5">
+                        <p>78</p>
+                    </div>
+                    <div class="low" id="t6">
+                        <p>70</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Saturday</h2>
+                <img src="./assets/some_sun.png" alt="some_sun">
+                <p>some sun</p>
+                <div class="temp-display">
+                    <div class="high" id="t7">
+                        <p>75</p>
+                    </div>
+                    <div class="low" id="t8">
+                        <p>65</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cookie" id="cookie">
+            <div class="cookie-img">
+                <img src="./assets/cookie.png" alt="cookie">
+            </div>
+            <div class="cookie-message">
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                    features and to analyse our traffic.
+                    <a href="#">Read more...</a>
+                </p>
+            </div>
+            <div class="cookie-btn">
+                <input type="button" value="I Accept" onclick="dismissCookie()">
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
